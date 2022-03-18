@@ -1,9 +1,17 @@
+*{
+  font-family: Nunito;
+}
 .welcome-content {
   --background: var(--ion-color-primary);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .main-wrapper {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   .banner {
     height: 50%;

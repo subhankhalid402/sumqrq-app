@@ -13,8 +13,14 @@ import {
 } from "@ionic/react";
 import './Home.scss'
 import {listOutline, scanOutline} from "ionicons/icons";
+import {useHistory} from "react-router";
 
 const Home: React.FC = () => {
+    let history = useHistory();
+
+    function handleClick() {
+        history.push("/history");
+    }
     return (
         <div>
             <IonPage className="home-Content">
@@ -54,18 +60,18 @@ const Home: React.FC = () => {
                             {/*</div>*/}
                             <IonGrid className="wrapper-buttons">
                                 <IonRow>
-                                    <IonCol size="4">
-                                        <IonButton>
+                                    <IonCol size="6">
+                                        <IonButton onClick={handleClick}>
                                             <div>
-                                                <IonIcon icon={listOutline}/>
+                                                <IonImg src={require("../assets/images/list.png")} style={{width:"54px", height:"54px" }}/>
                                                 <p>List</p>
                                             </div>
                                         </IonButton>
                                     </IonCol>
-                                    <IonCol size="4">
+                                    <IonCol size="6">
                                         <IonButton>
                                             <div>
-                                                <IonIcon icon={scanOutline}/>
+                                               <IonImg src={require("../assets/images/sanner.png")}/>
                                                 <p>Scan</p>
                                             </div>
                                         </IonButton>

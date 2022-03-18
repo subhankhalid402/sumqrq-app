@@ -1,3 +1,6 @@
+*{
+  font-family: Nunito;
+}
 .home-Content {
   .ion-Toolbar {
     //--border-width: 0 !important;
@@ -18,11 +21,13 @@
         margin-left: 20px;
 
         h3 {
-          margin: 0 0 10px 0;
+          margin: 0 0 8px 0;
+          font-weight: 700;
         }
 
         p {
           margin: 0;
+          font-size: 12px;
         }
       }
 
@@ -33,7 +38,6 @@
     background: var(--ion-color-primary);
     display: flex;
     flex-direction: column;
-
     .wrapper-inner {
       background: white;
       height: 100%;
@@ -42,7 +46,6 @@
       .states {
         background: white;
         display: flex;
-
         justify-content: space-around;
         align-items: center;
         border-radius: 10px;
@@ -66,7 +69,7 @@
             font-family: "Nunito";
             font-weight: 400;
             color: rgba(0, 0, 0, 0.47);
-            font-size: 14px;
+            font-size: 11px;
           }
         }
       }
@@ -75,15 +78,19 @@
     .wrapper-buttons {
       background: white;
       margin-top: 50px;
+      padding: 0 13px 0 8px;
       ion-row{
         justify-content: center;
         align-items: center;
         ion-col{
           ion-button{
-            height: 108px;
+            height: 150px;
+            --border-radius: 20px;
             width: 100%;
-            ion-icon{
-              font-size: 30px;
+
+            ion-img{
+              height: 60px;
+              width: 60px;
             }
             p{
               margin-bottom: 0;
