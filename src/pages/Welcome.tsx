@@ -1,7 +1,8 @@
 import {IonContent, IonPage, IonImg, IonButton,IonIcon} from '@ionic/react';
 import './Welcome.scss';
-import {chevronForward, push} from "ionicons/icons";
+import {chevronForward, chevronForwardSharp, push} from "ionicons/icons";
 import {useHistory} from "react-router";
+import {Link} from "react-router-dom";
 
 const Welcome: React.FC = () => {
     let history= useHistory();
@@ -21,7 +22,7 @@ const Welcome: React.FC = () => {
                            <p>
                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet
                            </p>
-                            <IonButton onClick={handleClick}>Let's Start <IonIcon icon={chevronForward}/></IonButton>
+                            <Link to="/home">Let's Start <IonIcon icon={chevronForwardSharp}/></Link>
                         </div>
                     </div>
                 </div>

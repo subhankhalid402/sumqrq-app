@@ -18,9 +18,9 @@ import {useHistory} from "react-router";
 const Home: React.FC = () => {
     let history = useHistory();
 
-    function handleClick() {
-        history.push("/history");
-    }
+        function handleClick() {
+            history.push("/history");
+        }
     return (
         <div>
             <IonPage className="home-Content">

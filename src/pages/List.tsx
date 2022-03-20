@@ -19,7 +19,7 @@ const List: React.FC = () => {
                     <div className="ion-Toolbar">
                         <div className="header">
                             <div className="media-body">
-                                <IonAvatar style={{height: "80px", width: "80px"}}>
+                                <IonAvatar style={{height: "50px", width: "50px"}}>
                                     <IonImg src={require("../assets/images/media.jpg")}/>
                                 </IonAvatar>
                                 <h3>Alison Denis</h3>

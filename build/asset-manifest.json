@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ba0390c.css",
-    "main.js": "/static/js/main.377421ee.js",
+    "main.css": "/static/css/main.df8cddc6.css",
+    "main.js": "/static/js/main.2de8e12c.js",
     "static/js/3630.027c72c3.chunk.js": "/static/js/3630.027c72c3.chunk.js",
     "static/js/3107.7f9fe197.chunk.js": "/static/js/3107.7f9fe197.chunk.js",
     "static/js/7397.5095095a.chunk.js": "/static/js/7397.5095095a.chunk.js",
@@ -79,16 +79,14 @@
     "static/js/9377.489c1bd1.chunk.js": "/static/js/9377.489c1bd1.chunk.js",
     "static/js/471.0a4845ae.chunk.js": "/static/js/471.0a4845ae.chunk.js",
     "static/media/media.jpg": "/static/media/media.c4c5ff7464396b5348f1.jpg",
-    "static/media/Nunito-SemiBold.ttf": "/static/media/Nunito-SemiBold.06337b2efe0c0d52bcb6.ttf",
-    "static/media/Nunito-Regular.ttf": "/static/media/Nunito-Regular.e4eb7682710458841b10.ttf",
-    "static/media/Nunito-Bold.ttf": "/static/media/Nunito-Bold.7ddd6722d49bf5270cf1.ttf",
+    "static/media/Sebino-Regular.ttf": "/static/media/Sebino-Regular.f3333488e00589ebf504.ttf",
     "service-worker.js": "/service-worker.js",
     "static/media/sanner.png": "/static/media/sanner.ba568e77dd106d209740.png",
     "static/media/banner.png": "/static/media/banner.a5b1555cbbd4cabf90b7.png",
     "static/media/list.png": "/static/media/list.3a5884130f3f037c3a68.png",
     "index.html": "/index.html",
-    "main.9ba0390c.css.map": "/static/css/main.9ba0390c.css.map",
-    "main.377421ee.js.map": "/static/js/main.377421ee.js.map",
+    "main.df8cddc6.css.map": "/static/css/main.df8cddc6.css.map",
+    "main.2de8e12c.js.map": "/static/js/main.2de8e12c.js.map",
     "3630.027c72c3.chunk.js.map": "/static/js/3630.027c72c3.chunk.js.map",
     "3107.7f9fe197.chunk.js.map": "/static/js/3107.7f9fe197.chunk.js.map",
     "7397.5095095a.chunk.js.map": "/static/js/7397.5095095a.chunk.js.map",
@@ -167,7 +165,7 @@
     "471.0a4845ae.chunk.js.map": "/static/js/471.0a4845ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ba0390c.css",
-    "static/js/main.377421ee.js"
+    "static/css/main.df8cddc6.css",
+    "static/js/main.2de8e12c.js"
   ]
 }
