@@ -25,7 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -51,6 +51,11 @@
       <workItem from="1647463444013" duration="11104000" />
       <workItem from="1647549070761" duration="16529000" />
       <workItem from="1647720382260" duration="9602000" />
+      <workItem from="1647894650814" duration="1750000" />
+      <workItem from="1647900774393" duration="12999000" />
+      <workItem from="1647982551351" duration="617000" />
+      <workItem from="1647992448057" duration="26000" />
+      <workItem from="1647992509039" duration="6976000" />
     </task>
     <servers />
   </component>
@@ -58,9 +63,28 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1647720401814">
+    <state x="527" y="256" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1648000362064">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1647720401814" />
+    <state x="527" y="256" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1648000362064" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1648000341969">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1648000341969" />
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1647992599423">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1647992599423" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/Details.tsx</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

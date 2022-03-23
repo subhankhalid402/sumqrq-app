@@ -6,9 +6,7 @@ import {
     IonAvatar, IonList, IonItem, IonLabel, IonIcon, IonButton,
 
 } from "@ionic/react";
-import './History.scss';
-import {chevronForwardOutline, person, personOutline} from "ionicons/icons";
-import {Link} from "react-router-dom";
+import './History.scss'
 
 const History: React.FC = () => {
     return (
@@ -28,50 +26,73 @@ const History: React.FC = () => {
                     <div className="wrapper">
                         <div className="wrapper-inner">
                             <IonList>
-                                <IonItem lines="none">
-                                    <Link to="/list">
-                                        <div className="services">
-                                            <div className="person-icon">
-                                                <IonIcon icon={person}/>
+                                <div className="history-list">
+                                    <h1>January 2022</h1>
+                                    <IonItem>
+                                        <div className="list">
+                                            <div className="inner-ticket">
+                                                <div className="date">
+                                                    <p>Jan</p>
+                                                    <h5>13</h5>
+                                                </div>
+                                                <IonImg src={require("../assets/images/invoice.png")}/>
+                                                <div className="ticket-details">
+                                                    <h4>Status</h4>
+                                                    <p>Ticket Id</p>
+                                                </div>
                                             </div>
-                                            <p>Services</p>
+                                            <span>Served</span>
                                         </div>
-                                        <IonIcon icon={chevronForwardOutline}/>
-                                    </Link>
-                                </IonItem>
-                                <IonItem lines="none">
-                                    <Link to="/list">
-                                        <div className="services">
-                                            <div className="person-icon">
-                                                <IonIcon icon={person}/>
+                                    </IonItem>
+                                    <IonItem>
+                                        <div className="list">
+                                            <div className="inner-ticket">
+                                                <div className="date">
+                                                    <p>Jan</p>
+                                                    <h5>13</h5>
+                                                </div>
+                                                <IonImg src={require("../assets/images/invoice.png")}/>
+                                                <div className="ticket-details">
+                                                    <h4>Status</h4>
+                                                    <p>Ticket Id</p>
+                                                </div>
                                             </div>
-                                            <p>Services</p>
+                                            <span>Served</span>
                                         </div>
-                                        <IonIcon icon={chevronForwardOutline}/>
-                                    </Link>
-                                </IonItem>
-                                <IonItem lines="none">
-                                    <Link to="/list">
-                                        <div className="services">
-                                            <div className="person-icon">
-                                                <IonIcon icon={person}/>
+                                    </IonItem>
+                                    <IonItem>
+                                        <div className="list">
+                                            <div className="inner-ticket">
+                                                <div className="date">
+                                                    <p>Jan</p>
+                                                    <h5>13</h5>
+                                                </div>
+                                                <IonImg src={require("../assets/images/invoice.png")}/>
+                                                <div className="ticket-details">
+                                                    <h4>Status</h4>
+                                                    <p>Ticket Id</p>
+                                                </div>
                                             </div>
-                                            <p>Services</p>
+                                            <span>Served</span>
                                         </div>
-                                        <IonIcon icon={chevronForwardOutline}/>
-                                    </Link>
-                                </IonItem>
-                                <IonItem lines="none">
-                                    <Link to="/list">
-                                        <div className="services">
-                                            <div className="person-icon">
-                                                <IonIcon icon={person}/>
+                                    </IonItem>
+                                    <IonItem>
+                                        <div className="list">
+                                            <div className="inner-ticket">
+                                                <div className="date">
+                                                    <p>Jan</p>
+                                                    <h5>01</h5>
+                                                </div>
+                                                <IonImg src={require("../assets/images/invoice.png")}/>
+                                                <div className="ticket-details">
+                                                    <h4>Status</h4>
+                                                    <p>Ticket Id</p>
+                                                </div>
                                             </div>
-                                            <p>Services</p>
+                                            <span>Served</span>
                                         </div>
-                                        <IonIcon icon={chevronForwardOutline}/>
-                                    </Link>
-                                </IonItem>
+                                    </IonItem>
+                                </div>
                             </IonList>
                         </div>
                     </div>

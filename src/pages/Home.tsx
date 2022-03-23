@@ -16,10 +16,11 @@ import {listOutline, scanOutline} from "ionicons/icons";
 import {useHistory} from "react-router";
 
 const Home: React.FC = () => {
+    //-----------------Barcode coding start-----------------
     let history = useHistory();
 
         function handleClick() {
-            history.push("/history");
+            history.push("/details");
         }
     return (
         <div>
@@ -61,18 +62,18 @@ const Home: React.FC = () => {
                             <IonGrid className="wrapper-buttons">
                                 <IonRow>
                                     <IonCol size="6">
-                                        <IonButton onClick={handleClick}>
+                                        <IonButton>
                                             <div>
-                                                <IonImg src={require("../assets/images/list.png")} style={{width:"54px", height:"54px" }}/>
-                                                <p>List</p>
+                                                <IonImg src={require("../assets/images/sanner.png")}/>
+                                                <p>Scan</p>
                                             </div>
                                         </IonButton>
                                     </IonCol>
                                     <IonCol size="6">
-                                        <IonButton>
+                                        <IonButton onClick={handleClick}>
                                             <div>
-                                               <IonImg src={require("../assets/images/sanner.png")}/>
-                                                <p>Scan</p>
+                                                <IonImg src={require("../assets/images/list.png")} style={{width:"54px", height:"54px" }}/>
+                                                <p>History</p>
                                             </div>
                                         </IonButton>
                                     </IonCol>

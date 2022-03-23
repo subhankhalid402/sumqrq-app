@@ -1,6 +1,7 @@
-*{
+* {
   font-family: Nunito;
 }
+
 .history-Content {
   .ion-Toolbar {
     //--border-width: 0 !important;
@@ -40,40 +41,78 @@
       ion-list {
         margin-top: 50px;
 
-        ion-item {
-          --inner-padding-end: 0px;
-          --padding-start: 0px;
-          margin: 10px 20px;
-          border-radius: 10px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          a {
-            .services{
+        .history-list {
+          margin-bottom: 20px;
+          h1 {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+          }
+          ion-item:last-child {
+            --border-style: none
+          }
+          ion-item {
+            --padding-start: 0;
+
+            .list {
               display: flex;
+              justify-content: space-between;
+              width: 100%;
               align-items: center;
-              p{
-                margin: 0 0 0 15px;
-                font-weight: 700;
-                font-size: 14px;
+              padding: 10px 0;
+
+              span {
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.47);
+
               }
-              .person-icon{
-                height: 35px;
-                width: 35px;
+
+              .inner-ticket {
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                border-radius:  10px;
-                background: RGBA(69,74,119,0.47);
-                ion-icon{
-                  color: var(--ion-color-primary);
+
+                .date {
+                  text-align: center;
+                  margin-right: 20px;
+
+                  p {
+                    margin: 0;
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.47);
+                  }
+
+                  h5 {
+                    margin: 0;
+                    font-size: 16px;
+                    color: #706f6f;
+                  }
+                }
+
+                ion-img {
+                  width: 45px;
+                  height: 45px;
+                  background: #ededed;
+                  padding: 10px;
+                  border-radius: 50px;
+                }
+
+                .ticket-details {
+                  padding-left: 20px;
+
+                  p {
+                    margin: 0;
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.47);
+                  }
+
+                  h4 {
+                    margin: 0 0 4px 0;
+                    font-size: 16px;
+                    color: #706f6f;
+                  }
                 }
               }
             }
-            padding: 20px 20px;
-            width: 100%;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
           }
         }
       }

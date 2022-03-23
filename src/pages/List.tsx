@@ -3,20 +3,30 @@ import {
     IonContent,
     IonImg,
     IonPage,
-    IonAvatar, IonList, IonItem, IonLabel, IonIcon, IonButton, IonInput,
-
+    IonAvatar, IonBackButton,IonIcon, IonButton, IonInput,
+    IonButtons
 } from "@ionic/react";
-import './History.scss';
+import './Details.scss';
 import './List.scss'
-import {checkmark, chevronForward, ticketOutline} from "ionicons/icons";
+import {arrowBackOutline, checkmark, chevronForward, ticketOutline} from "ionicons/icons";
+import {useHistory} from "react-router";
 
 const List: React.FC = () => {
     const [text, setText] = useState<string>();
+    let history = useHistory();
+
+    function handleClick() {
+        history.push("/details");
+    }
     return (
         <div>
             <IonPage className="history-Content">
                 <IonContent className="">
                     <div className="ion-Toolbar">
+                        <IonButton slot="start" onClick={handleClick}>
+                            <IonIcon icon={arrowBackOutline}/>
+                            {/*<IonBackButton icon={arrowBackOutline} mode="md"/>*/}
+                        </IonButton>
                         <div className="header">
                             <div className="media-body">
                                 <IonAvatar style={{height: "50px", width: "50px"}}>
@@ -29,7 +39,7 @@ const List: React.FC = () => {
                     <div className="wrapper">
                         <div className="wrapper-inner">
                             <div className="detail-cycle">
-                                <IonIcon icon={ticketOutline}/>
+                               <IonImg src={require('../assets/images/invoice.png')}/>
                                <div className="detail-date-time">
                                    <h5>8,439</h5>
                                    <p>2021-03-12 <span>12:40 PM</span></p>
