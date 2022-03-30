@@ -7,6 +7,9 @@
     background: var(--ion-color-primary);
     border-radius: 0 0 0 50px;
     //position: absolute;
+    ion-button{
+      --box-shadow: none;
+    }
   }
 
   .header {

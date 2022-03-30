@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {
     IonContent,
     IonImg,
@@ -7,15 +7,45 @@ import {
 
 } from "@ionic/react";
 import './Details.scss';
-import {chevronForwardOutline, person, personOutline} from "ionicons/icons";
+import {arrowBackOutline, chevronForwardOutline, person, personOutline} from "ionicons/icons";
 import {Link} from "react-router-dom";
+import {useHistory} from "react-router";
+import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 
 const Details: React.FC = () => {
+
+    const [text, setText] = useState<string>();
+    const [raheel, setRaheel] = useState({
+        value: '',
+        name: ''
+    });
+    const  handleChange = (e: any) => {
+        const { value, name } = e.target;
+        setRaheel(e.target);
+    };
+
+
+    useEffect(()=>{
+        const dataToScan = async () => {
+            const data = await BarcodeScanner.scan();
+            alert(JSON.stringify(data));
+            //this.setState({ stringEncoded: data.text })
+        };
+        dataToScan();
+    },[]);
+    let history = useHistory();
+
+    function handleClick() {
+        history.push("/home");
+    }
     return (
         <div>
             <IonPage className="Details-Content">
                 <IonContent className="">
                     <div className="ion-Toolbar">
+                        <IonButton slot="start" onClick={handleClick}>
+                            <IonIcon icon={arrowBackOutline}/>
+                        </IonButton>
                         <div className="header">
                             <div className="media-body">
                                 <IonAvatar style={{height: "50px", width: "50px"}}>
@@ -29,7 +59,7 @@ const Details: React.FC = () => {
                         <div className="wrapper-inner">
                             <IonList>
                                 <IonItem lines="none">
-                                    <Link to="/list">
+                                    <Link to="/dailer">
                                         <div className="services">
                                             <div className="person-icon">
                                                 <IonIcon icon={person}/>

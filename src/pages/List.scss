@@ -90,7 +90,7 @@
     .cancel-queue {
       width: 100%;
       font-weight: 700;
-      text-transform: lowercase;
+      text-transform: capitalize;
       margin: 20px 0 20px 0;
       height: 52px;
       --background: var(--ion-color-secondary);

@@ -1,6 +1,7 @@
-*{
+* {
   font-family: Nunito;
 }
+
 .home-Content {
   .ion-Toolbar {
     //--border-width: 0 !important;
@@ -23,7 +24,7 @@
         h3 {
           margin: 0 0 8px 0;
           font-weight: 700;
-          font-size: 20px!important;
+          font-size: 20px !important;
         }
 
         p {
@@ -39,6 +40,7 @@
     background: var(--ion-color-primary);
     display: flex;
     flex-direction: column;
+
     .wrapper-inner {
       background: white;
       height: 100%;
@@ -78,20 +80,43 @@
       background: white;
       margin-top: 50px;
       padding: 0 13px 0 8px;
-      ion-row{
+
+      ion-row {
         justify-content: center;
         align-items: center;
-        ion-col{
-          ion-button{
-            height: 150px;
+
+        .history-list {
+
+          a {
+            text-decoration: none;
+            background: var(--ion-color-primary);
+            height: 128px;
+            border-radius: 20px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+          p {
+            color: white;
+            margin-bottom: 0;
+          }
+        }
+
+        ion-col {
+          ion-button {
+            height: 128px;
             --border-radius: 20px;
             width: 100%;
 
-            ion-img{
-              height: 60px;
-              width: 60px;
+            ion-img {
+              height: 48px;
+              width: 48px;
             }
-            p{
+
+            p {
               margin-bottom: 0;
             }
           }

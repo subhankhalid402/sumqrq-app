@@ -16,7 +16,10 @@ const List: React.FC = () => {
     let history = useHistory();
 
     function handleClick() {
-        history.push("/details");
+        history.push("/dailer");
+    }
+    function handleClick1() {
+        history.push("/dailer");
     }
     return (
         <div>
@@ -25,7 +28,6 @@ const List: React.FC = () => {
                     <div className="ion-Toolbar">
                         <IonButton slot="start" onClick={handleClick}>
                             <IonIcon icon={arrowBackOutline}/>
-                            {/*<IonBackButton icon={arrowBackOutline} mode="md"/>*/}
                         </IonButton>
                         <div className="header">
                             <div className="media-body">
@@ -51,7 +53,7 @@ const List: React.FC = () => {
                                    <IonIcon icon={checkmark}/>
                                </div>
                            </div>
-                            <IonButton className="cancel-queue">Cancel</IonButton>
+                            <IonButton className="cancel-queue" onClick={handleClick1}>Cancel</IonButton>
                         </div>
                     </div>
                 </IonContent>

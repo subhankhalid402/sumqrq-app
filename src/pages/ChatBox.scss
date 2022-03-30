@@ -1,0 +1,62 @@
+* {
+  font-family: Nunito;
+}
+
+.chat-content {
+  .ion-Toolbar {
+    //--border-width: 0 !important;
+    background: var(--ion-color-primary);
+    border-radius: 0 0 0 50px;
+    //position: absolute;
+    ion-button {
+      --box-shadow: none;
+    }
+  }
+
+  .header {
+    padding: 15px 20px;
+
+    .media-body {
+      display: flex;
+      align-items: center;
+      color: white;
+      justify-content: space-between;
+
+      h3 {
+        margin: 10px 0 0 0;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .wrapper {
+    background: var(--ion-color-primary);
+    display: flex;
+    flex-direction: column;
+
+    .wrapper-inner {
+      background: white;
+      height: 100%;
+      border-radius: 0 50px 0 0;
+      .chat-box{
+        margin-top: 30px;
+        ul{
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li{
+            width: auto;
+            max-width: 70%;
+            background: #edeef8;
+            padding: 10px;
+            border-radius: 25px;
+            span{
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

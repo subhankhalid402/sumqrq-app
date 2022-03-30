@@ -1,0 +1,41 @@
+* {
+  font-family: Nunito;
+}
+.Details-Content{
+  ion-toolbar{
+    ion-button{
+      --box-shadow: none;
+    }
+  }
+}
+.wrapper {
+  .wrapper-inner {
+    .generate-btn {
+      width: 100%;
+      margin-top: 20px;
+      --background: var(--ion-color-secondary);
+      margin-inline: 0;
+      --box-shadow: none;
+      text-transform: capitalize;
+      height: 48px;
+    }
+
+    .main {
+      margin-top: 70px;
+    }
+
+    .dailer {
+      margin-top: 20px;
+      border: 1px solid var(--ion-color-primary);
+      border-radius: 5px;
+
+      ion-input {
+        height: 48px;
+        font-size: 14px;
+        //--padding-start: 20px;
+      }
+    }
+  }
+}
+
+

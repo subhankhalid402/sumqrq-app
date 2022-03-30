@@ -26,8 +26,8 @@ import Details from "./pages/Details";
 import List from "./pages/List";
 import History from "./pages/History";
 import Dailer from "./pages/Dailer";
-import Scanner from "./pages/Dialer";
-
+import QrScanner from "./pages/QrScanner";
+import ChatBox from "./pages/ChatBox";
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -52,8 +52,11 @@ const App: React.FC = () => (
                 <Route exact path="/dailer">
                     <Dailer/>
                 </Route>
-                <Route exact path="/scanner">
-                    <Scanner/>
+                <Route exact path="/qr-scanner">
+                    <QrScanner/>
+                </Route>
+                <Route exact path="/chat-box">
+                 <ChatBox/>
                 </Route>
                 <Route exact path="/">
                     <Redirect to="/welcome"/>

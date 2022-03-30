@@ -3,17 +3,26 @@ import {
     IonContent,
     IonImg,
     IonPage,
-    IonAvatar, IonList, IonItem, IonLabel, IonIcon, IonButton,
+    IonAvatar, IonList, IonItem, IonLabel, IonIcon, IonButton, IonButtons,IonBackButton
 
 } from "@ionic/react";
 import './History.scss'
+import {arrowBackOutline} from "ionicons/icons";
+import {useHistory} from "react-router";
 
 const History: React.FC = () => {
+    let history = useHistory();
+    function handleClick() {
+        history.push("/home");
+    }
     return (
         <div>
             <IonPage className="history-Content">
                 <IonContent className="">
                     <div className="ion-Toolbar">
+                        <IonButton slot="start" onClick={handleClick}>
+                            <IonIcon icon={arrowBackOutline}/>
+                        </IonButton>
                         <div className="header">
                             <div className="media-body">
                                 <IonAvatar style={{height: "50px", width: "50px"}}>
