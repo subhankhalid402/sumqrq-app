@@ -15,7 +15,7 @@
   flex-direction: column;
 
   .banner {
-    height: 47%;
+    height: calc(100% - 50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,12 +33,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100% - 50%);
 
     .content-inner {
+
+      height: 100%;
+      width: 100%;
       background: var(--ion-color-primary);
       border-radius: 50px 0 0 0;
       padding: 55px 20px 0 20px;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
 
       h1 {
         margin: 0;
@@ -61,10 +70,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 45px;
+        height: 42px;
         text-decoration: none;
         color: white;
-        max-width: 44%;
+        padding: 0px 10px 0 15px;
         margin: 30px auto 30px auto;
         box-shadow: 0 0 24px -5px #fb606f;
 

@@ -10,6 +10,7 @@ import './Details.scss';
 import './List.scss'
 import {arrowBackOutline, checkmark, chevronForward, ticketOutline} from "ionicons/icons";
 import {useHistory} from "react-router";
+import {Link} from "react-router-dom";
 
 const List: React.FC = () => {
     const [text, setText] = useState<string>();
@@ -20,6 +21,10 @@ const List: React.FC = () => {
     }
     function handleClick1() {
         history.push("/dailer");
+    }
+
+    function handleClick2() {
+        history.push("/chat-box");
     }
     return (
         <div>
@@ -49,9 +54,11 @@ const List: React.FC = () => {
                             </div>
                            <div className="comments">
                                <IonInput  placeholder="Write a message"/>
-                               <div className="tick-icon">
-                                   <IonIcon icon={checkmark}/>
-                               </div>
+                               <Link className="tick-icon" to="/chat-box">
+                                       <IonIcon icon={checkmark}/>
+
+                               </Link>
+
                            </div>
                             <IonButton className="cancel-queue" onClick={handleClick1}>Cancel</IonButton>
                         </div>
