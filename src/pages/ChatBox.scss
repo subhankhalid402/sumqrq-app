@@ -8,6 +8,7 @@
     background: var(--ion-color-primary);
     border-radius: 0 0 0 50px;
     //position: absolute;
+
     ion-button {
       --box-shadow: none;
     }
@@ -23,7 +24,7 @@
       justify-content: space-between;
 
       h3 {
-        margin: 10px 0 0 0;
+        margin: 0;
         font-weight: 700;
         font-size: 20px;
       }

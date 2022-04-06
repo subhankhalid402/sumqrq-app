@@ -54,7 +54,29 @@ const ChatBox: React.FC = () => {
                                     <div className="message send">
                                         Photography
                                     </div>
-
+                                    <div className="message receive">
+                                        Hi Alan
+                                    </div>
+                                    <div className="message receive">
+                                        I am Jason, here to help  you find new friends
+                                    </div>
+                                    <div className="message receive">
+                                        Are you sure to find friends
+                                    </div>
+                                    <div className="message send">
+                                        Photography
+                                    </div><div className="message receive">
+                                    Hi Alan
+                                </div>
+                                    <div className="message receive">
+                                        I am Jason, here to help  you find new friends
+                                    </div>
+                                    <div className="message receive">
+                                        Are you sure to find friends
+                                    </div>
+                                    <div className="message send">
+                                        Photography
+                                    </div>
                                 </>
                             </div>
                             <div className="chat-footer">
