@@ -22,13 +22,14 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import Home from "./pages/Home";
-import Details from "./pages/Details";
+import ServiceList from "./pages/ServiceList";
 import List from "./pages/List";
 import History from "./pages/History";
 import Dailer from "./pages/Dailer";
 import QrScanner from "./pages/QrScanner";
 import ChatBox from "./pages/ChatBox";
     import FeedBack from "./pages/FeedBack";
+    import Login from "./pages/Login";
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -42,7 +43,7 @@ const App: React.FC = () => (
                     <Home/>
                 </Route>
                 <Route exact path="/details">
-                    <Details/>
+                    <ServiceList/>
                 </Route>
                 <Route exact path="/list">
                     <List/>
@@ -61,6 +62,9 @@ const App: React.FC = () => (
                 </Route>
                 <Route exact path="/feed-back">
                    <FeedBack/>
+                </Route>
+                <Route exact path="/login">
+                   <Login/>
                 </Route>
                 <Route exact path="/">
                     <Redirect to="/welcome"/>

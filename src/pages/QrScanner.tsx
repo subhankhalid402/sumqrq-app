@@ -18,10 +18,10 @@ const QrScanner: React.FC = () => {
             <div>
                 <IonPage className="home-Content">
                     <IonContent className="">
-
+                        
                     </IonContent>
                 </IonPage>
             </div>
         );
-    }
+    };
 export default QrScanner;

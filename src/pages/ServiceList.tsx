@@ -6,13 +6,13 @@ import {
     IonAvatar, IonList, IonItem, IonLabel, IonIcon, IonButton,
 
 } from "@ionic/react";
-import './Details.scss';
+import './ServiceList.scss';
 import {arrowBackOutline, chevronForwardOutline, person, personOutline} from "ionicons/icons";
 import {Link} from "react-router-dom";
 import {useHistory} from "react-router";
 import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 
-const Details: React.FC = () => {
+const ServiceList: React.FC = () => {
 
     const [text, setText] = useState<string>();
     const [raheel, setRaheel] = useState({
@@ -110,4 +110,4 @@ const Details: React.FC = () => {
         </div>
     )
 };
-export default Details;
+export default ServiceList;

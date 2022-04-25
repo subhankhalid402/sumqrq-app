@@ -6,7 +6,7 @@ import {
     IonAvatar, IonBackButton,IonIcon, IonButton, IonInput,
     IonButtons
 } from "@ionic/react";
-import './Details.scss';
+import './ServiceList.scss';
 import './List.scss'
 import {arrowBackOutline, checkmark, chevronForward, ticketOutline} from "ionicons/icons";
 import {useHistory} from "react-router";
