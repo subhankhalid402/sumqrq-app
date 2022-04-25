@@ -1,14 +1,17 @@
 import {IonContent, IonPage, IonImg, IonButton, IonIcon, IonGrid, IonRow, IonCol} from '@ionic/react';
 import './Welcome.scss';
-import {chevronForward, chevronForwardSharp, push} from "ionicons/icons";
 import {useHistory} from "react-router";
 import {Link} from "react-router-dom";
-import React from "react";
+import React, {useEffect} from "react";
+
 
 const Welcome: React.FC = () => {
     let history= useHistory();
     function handleClick() {
-        history.push("/home");
+        history.push("/list");
+    }
+    function handleClick1() {
+        history.push("/login");
     }
     return (
         <IonPage>
@@ -26,7 +29,7 @@ const Welcome: React.FC = () => {
                             <IonGrid className="wrapper-buttons">
                                 <IonRow>
                                     <IonCol size="6" className="history-list">
-                                        <IonButton>
+                                        <IonButton onClick={handleClick}>
                                             <div>
                                                 <IonImg src={require("../assets/images/scan.png")}/>
                                                 <p>Scan</p>
@@ -34,7 +37,7 @@ const Welcome: React.FC = () => {
                                         </IonButton>
                                     </IonCol>
                                     <IonCol size="6" className="history-list">
-                                        <IonButton>
+                                        <IonButton onClick={handleClick1}>
                                             <div>
                                                 <IonImg src={require("../assets/images/login.png")}/>
                                                 <p>Login</p>

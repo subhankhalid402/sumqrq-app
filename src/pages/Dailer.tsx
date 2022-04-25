@@ -14,7 +14,7 @@ const Dailer: React.FC = () => {
     let history = useHistory();
 
     function handleClick() {
-        history.push("/details");
+        history.push("/service-list");
     }
     function handleClick2() {
         history.push("/list");

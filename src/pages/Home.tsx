@@ -10,14 +10,14 @@ import {
 } from '@ionic/react';
 import React from 'react';
 import "./Home.scss"
-import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+
 import {useHistory} from "react-router";
 import {Link} from "react-router-dom";
 const Home: React.FC = ()=> {
     let history = useHistory();
 
     function handleClick() {
-        history.push("/details");
+        history.push("/service-list");
     }
         return (
             <div>

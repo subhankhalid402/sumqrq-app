@@ -15,16 +15,17 @@
   flex-direction: column;
 
   .banner {
-    //height: calc(100% - 50%);
+    height: calc(100% - 65%);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0 0 50px 0;
     background: white;
+    padding: 15px 0;
 
     ion-img {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
     }
   }
 
@@ -67,6 +68,8 @@
       ion-grid {
         ion-row {
           ion-col {
+            padding-right: 10px;
+            padding-left: 10px;
             ion-button {
               height: 128px;
               --border-radius: 20px;

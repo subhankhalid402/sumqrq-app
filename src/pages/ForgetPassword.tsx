@@ -16,8 +16,7 @@ import {useState} from "react";
 import {lockClosedOutline, mail, mailOutline} from "ionicons/icons";
 import {Link} from "react-router-dom";
 
-
-const Login: React.FC = () => {
+const ForgetPassword: React.FC = () => {
     const [present] = useIonAlert();
     const [text, setText] = useState<string>();
     let history= useHistory();
@@ -29,29 +28,21 @@ const Login: React.FC = () => {
             <IonContent fullscreen className="login-content">
                 <div className="login-wrapper">
                     <div className="login-banner">
-                        <IonImg src={require('../assets/images/logo.png')}/>
-                        <h1>Welcome Back</h1>
-                        <p>Sign in to continue</p>
+                        <IonImg src={require('../assets/images/forgot.png')}/>
+                        <h1>Forgot Password</h1>
                     </div>
                     <div className="login-form">
                         <form>
-                                <div className="email">
-                                    <IonInput value={text} placeholder="Enter Email">
-                                        <IonIcon icon={mailOutline}/>
-                                        <IonLabel>Email</IonLabel>
-                                    </IonInput>
-                                </div>
                             <div className="email">
                                 <IonInput value={text} placeholder="Enter Password" type="password">
                                     <IonIcon icon={lockClosedOutline}/>
-                                    <IonLabel>Password</IonLabel>
+                                    <IonLabel>Forgot Password</IonLabel>
                                 </IonInput>
                             </div>
-                            <Link to="/forgot-password">Forgotten Password</Link>
+                            <Link to='/login'>Back to Login</Link>
                             <IonButton>
-                                Login
-                            </IonButton
-                                >
+                                Forgot
+                            </IonButton>
                         </form>
                     </div>
                 </div>
@@ -60,4 +51,4 @@ const Login: React.FC = () => {
     );
 };
 
-export default Login;
+export default ForgetPassword;

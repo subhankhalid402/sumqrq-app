@@ -1,9 +1,9 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {
     IonContent,
     IonImg,
     IonPage,
-    IonAvatar, IonBackButton,IonIcon, IonButton, IonInput,
+    IonAvatar, IonBackButton, IonIcon, IonButton, IonInput,
     IonButtons
 } from "@ionic/react";
 import './ServiceList.scss';
@@ -11,6 +11,7 @@ import './List.scss'
 import {arrowBackOutline, checkmark, chevronForward, ticketOutline} from "ionicons/icons";
 import {useHistory} from "react-router";
 import {Link} from "react-router-dom";
+import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 
 const List: React.FC = () => {
     const [text, setText] = useState<string>();
@@ -19,6 +20,7 @@ const List: React.FC = () => {
     function handleClick() {
         history.push("/dailer");
     }
+
     function handleClick1() {
         history.push("/dailer");
     }
@@ -26,6 +28,15 @@ const List: React.FC = () => {
     function handleClick2() {
         history.push("/chat-box");
     }
+
+    useEffect(() => {
+        const dataToScan = async () => {
+            const data = await BarcodeScanner.scan();
+            alert(JSON.stringify(data));
+            //this.setState({ stringEncoded: data.text })
+        };
+        dataToScan();
+    }, []);
     return (
         <div>
             <IonPage className="history-Content">
@@ -46,20 +57,20 @@ const List: React.FC = () => {
                     <div className="wrapper">
                         <div className="wrapper-inner">
                             <div className="detail-cycle">
-                               <IonImg src={require('../assets/images/invoice.png')}/>
-                               <div className="detail-date-time">
-                                   <h5>8,439</h5>
-                                   <p>2021-03-12 <span>12:40 PM</span></p>
-                               </div>
+                                <IonImg src={require('../assets/images/invoice.png')}/>
+                                <div className="detail-date-time">
+                                    <h5>8,439</h5>
+                                    <p>2021-03-12 <span>12:40 PM</span></p>
+                                </div>
                             </div>
-                           <div className="comments">
-                               <IonInput  placeholder="Write a message"/>
-                               <Link className="tick-icon" to="/chat-box">
-                                       <IonIcon icon={checkmark}/>
+                            <div className="comments">
+                                <IonInput placeholder="Write a message"/>
+                                <Link className="tick-icon" to="/chat-box">
+                                    <IonIcon icon={checkmark}/>
 
-                               </Link>
+                                </Link>
 
-                           </div>
+                            </div>
                             <IonButton className="cancel-queue" onClick={handleClick1}>Cancel</IonButton>
                         </div>
                     </div>

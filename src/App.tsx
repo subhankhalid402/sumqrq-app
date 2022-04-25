@@ -1,4 +1,4 @@
-    import {Redirect, Route} from 'react-router-dom';
+import {Redirect, Route} from 'react-router-dom';
 import {IonApp, IonRouterOutlet, setupIonicReact} from '@ionic/react';
 import {IonReactRouter} from '@ionic/react-router';
 import Welcome from './pages/Welcome';
@@ -28,8 +28,10 @@ import History from "./pages/History";
 import Dailer from "./pages/Dailer";
 import QrScanner from "./pages/QrScanner";
 import ChatBox from "./pages/ChatBox";
-    import FeedBack from "./pages/FeedBack";
-    import Login from "./pages/Login";
+import FeedBack from "./pages/FeedBack";
+import Login from "./pages/Login";
+import ForgetPassword from "./pages/ForgetPassword";
+
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -42,7 +44,7 @@ const App: React.FC = () => (
                 <Route exact path="/home">
                     <Home/>
                 </Route>
-                <Route exact path="/details">
+                <Route exact path="/service-list">
                     <ServiceList/>
                 </Route>
                 <Route exact path="/list">
@@ -58,13 +60,16 @@ const App: React.FC = () => (
                     <QrScanner/>
                 </Route>
                 <Route exact path="/chat-box">
-                 <ChatBox/>
+                    <ChatBox/>
                 </Route>
                 <Route exact path="/feed-back">
-                   <FeedBack/>
+                    <FeedBack/>
                 </Route>
                 <Route exact path="/login">
-                   <Login/>
+                    <Login/>
+                </Route>
+                <Route exact path="/forgot-password">
+                    <ForgetPassword/>
                 </Route>
                 <Route exact path="/">
                     <Redirect to="/welcome"/>

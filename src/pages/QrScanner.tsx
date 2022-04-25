@@ -14,6 +14,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import {useHistory} from "react-router";
 import {Link} from "react-router-dom";
 const QrScanner: React.FC = () => {
+
         return (
             <div>
                 <IonPage className="home-Content">
