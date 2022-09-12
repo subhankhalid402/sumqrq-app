@@ -3,7 +3,7 @@ import {
     IonContent,
     IonImg,
     IonPage,
-    IonAvatar, IonList, IonItem, IonLabel, IonIcon, IonButton,
+    IonAvatar, IonList, IonItem, IonLabel, IonIcon, IonButton, useIonViewWillEnter,
 
 } from "@ionic/react";
 import './ServiceList.scss';
@@ -25,11 +25,23 @@ const ServiceList: React.FC = () => {
     };
 
 
-    useEffect(()=>{
+    useIonViewWillEnter(()=>{
         const dataToScan = async () => {
-            const data = await BarcodeScanner.scan();
-            alert(JSON.stringify(data));
-            //this.setState({ stringEncoded: data.text })
+            try{
+
+                if (window.navigator.platform.match("android")) {
+                    // You are on a device, cordova plugins are accessible
+                    const data = await BarcodeScanner.scan();
+                    alert(JSON.stringify(data));
+                 
+                    //this.setState({ stringEncoded: data.text })
+                  } else {
+                    // Cordova not accessible, add mock data if necessary
+                    console.log('data')
+                  }
+            }catch(err){
+                console.log(err);
+            }
         };
         dataToScan();
     },[]);

@@ -48,10 +48,9 @@ const Login: React.FC = () => {
                                 </IonInput>
                             </div>
                             <Link to="/forgot-password">Forgotten Password</Link>
-                            <IonButton>
+                            < IonButton onClick={()=>handleClick()}>
                                 Login
-                            </IonButton
-                                >
+                            </IonButton >
                         </form>
                     </div>
                 </div>
