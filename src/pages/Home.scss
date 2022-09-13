@@ -12,7 +12,19 @@
 
   .header {
     padding: 60px 0 80px 20px;
-
+    .logout{
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+     
+      .logout-btn{
+        --background: orange;
+        font-size: 700;
+        margin: 0 0 8px 0;
+        font-weight: bold;
+      }
+    }
     .media-body {
       display: flex;
       align-items: center;

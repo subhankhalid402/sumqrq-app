@@ -23,8 +23,12 @@ const Home: React.FC = ()=> {
             <div>
                 <IonPage className="home-Content">
                     <IonContent className="">
+                     
                         <div className="ion-Toolbar">
                             <div className="header">
+                            <div className='logout'>
+                                <IonButton onClick={()=> history.push('/')} className='logout-btn'> Logout</IonButton>
+                        </div>
                                 <div className="media-body">
                                     <IonAvatar>
                                         <IonImg src={require("../assets/images/media.jpg")}

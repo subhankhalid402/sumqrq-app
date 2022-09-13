@@ -25,20 +25,20 @@ const ServiceList: React.FC = () => {
     };
 
 
-    useIonViewWillEnter(()=>{
+    useEffect(()=>{
         const dataToScan = async () => {
             try{
 
-                if (window.navigator.platform.match("android")) {
+                // if (window.navigator.platform.match("android")) {
                     // You are on a device, cordova plugins are accessible
                     const data = await BarcodeScanner.scan();
-                    alert(JSON.stringify(data));
+                    console.log(JSON.stringify(data));
                  
                     //this.setState({ stringEncoded: data.text })
-                  } else {
-                    // Cordova not accessible, add mock data if necessary
-                    console.log('data')
-                  }
+                //   } else {
+                //     // Cordova not accessible, add mock data if necessary
+                //     console.log('data')
+                //   }
             }catch(err){
                 console.log(err);
             }
