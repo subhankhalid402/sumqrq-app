@@ -1,10 +1,10 @@
 {
-  "name": "Queue Manger",
+  "name": "SUMQRQ",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@awesome-cordova-plugins/barcode-scanner": "^5.45.0",
-    "@capacitor/android": "^3.4.3",
+    "@capacitor/android": "3.4.3",
     "@capacitor/app": "1.1.1",
     "@capacitor/core": "3.4.3",
     "@capacitor/haptics": "1.1.4",
@@ -50,7 +50,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "resources": "capacitor-resources -p android"
   },
   "eslintConfig": {
     "extends": [

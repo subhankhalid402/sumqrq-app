@@ -1,6 +1,6 @@
 {
-	"appId": "io.QueueManger.starter",
-	"appName": "QueueManger",
+	"appId": "com.sumsols.sumqrq",
+	"appName": "SUMQRQ",
 	"webDir": "build",
 	"bundledWebRuntime": false
 }
